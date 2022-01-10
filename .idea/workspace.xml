@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9231bab6-4c9f-4f82-9de1-33f54cf876a1" name="Changes" comment="" />
+=======
     <list default="true" id="9231bab6-4c9f-4f82-9de1-33f54cf876a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/app/controllers/api/scores_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/scores_controller.rb" afterDir="false" />
     </list>
+>>>>>>> 7191ff490d8af58c9bd5eebc978488891ef48b05
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641463960127</updated>
+<<<<<<< HEAD
+      <workItem from="1641463964336" duration="2884000" />
+      <workItem from="1641542513903" duration="961000" />
+=======
       <workItem from="1641463964336" duration="2524000" />
+>>>>>>> 7191ff490d8af58c9bd5eebc978488891ef48b05
     </task>
     <servers />
   </component>

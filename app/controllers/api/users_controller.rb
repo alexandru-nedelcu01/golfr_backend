@@ -2,6 +2,25 @@ module Api
   # Controller that handles authorization and user data fetching
   class UsersController < ApplicationController
     include Devise::Controllers::Helpers
+    before_action :logged_in!, only: [:show]
+
+    def show
+      user = User.find_by(id: params[:id])
+      if user.nil?
+        render json: {
+          errors: [
+            'User not found'
+          ]
+        }, status: :not_found
+        return
+      end
+
+      serialized_user_scores = user.scores.order(played_at: :desc).map(&:serialize)
+      render json: {
+        name: user.name,
+        scores: serialized_user_scores
+      }.to_json
+    end
 
     def login
       user = User.find_by('lower(email) = ?', params[:email])
